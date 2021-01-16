@@ -18,6 +18,9 @@ const theme = extendTheme({
         fontSize: "xl",
         fontWeight: "medium",
       },
+      p: {
+        marginBottom: "15px"
+      },
       ".wysiwyg-content": {
         h1: {
           fontSize: 60,

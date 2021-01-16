@@ -12,5 +12,5 @@ export const useWpFrontPage = () => {
     `
   );
 
-  return data?.wpPage;
+  return data.wpPage;
 };
