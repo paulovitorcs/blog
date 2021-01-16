@@ -22,12 +22,12 @@ const LatestPosts = () => {
   return (
     <Wrap>
       <Heading size="md" mb="4">
-        Latest Posts
+        Últimas Postagens
       </Heading>
       <VStack spacing="20px">{postsList}</VStack>
       <HStack w="100%" justify="center" mt="4">
         <Link to="/blog">
-          <Button>See All Posts</Button>
+          <Button>Ver Todas as Postagens</Button>
         </Link>
       </HStack>
     </Wrap>
