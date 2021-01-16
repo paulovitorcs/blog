@@ -4,7 +4,7 @@ import { primary } from "../../../assets/colors";
 export const FrontPageHeaderContainer = styled.div`
   background-color: ${primary["800"]};
   color: white;
-  height: 80vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
