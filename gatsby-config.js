@@ -5,6 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: "paulovitorcs",
+    siteUrl: "https://paulovitorcs.com",
   },
   plugins: [
     {
@@ -41,7 +42,21 @@ module.exports = {
     {
       resolve: "gatsby-plugin-env-variables",
       options: {
-        allowList: ["EMAIL_JS_SERVICE_ID", "EMAIL_JS_TEMPLATE_ID", "EMAIL_JS_USER_ID"],
+        allowList: [
+          "EMAIL_JS_SERVICE_ID",
+          "EMAIL_JS_TEMPLATE_ID",
+          "EMAIL_JS_USER_ID",
+        ],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-google-fonts",
+      options: {
+        fonts: [
+          "Darker Grotesque:400,500,600,700",
+          "Bree Serif:400",
+        ],
+        display: "swap",
       },
     },
   ],

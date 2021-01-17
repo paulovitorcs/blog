@@ -39,9 +39,9 @@ const ArchivePost = (props) => {
   }, []);
 
   const loadMoreButton =
-    postsCount < posts.length ? (
+    postsCount < posts?.length ? (
       <HStack justify="center" mt="3">
-        <Button onClick={loadMorePosts}>Load More Posts</Button>
+        <Button onClick={loadMorePosts}>Mais Postagens</Button>
       </HStack>
     ) : null;
 
