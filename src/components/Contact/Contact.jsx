@@ -10,11 +10,25 @@ import {
   Input,
   Textarea,
   Button,
+  useToast,
 } from "@chakra-ui/react";
+import { sendToEmailJs } from "../../data/contact";
 
 const Contact = () => {
-  const submitForm = (values, actions) => {
-    console.log(values, actions);
+  const toast = useToast();
+
+  const submitForm = async (values, actions) => {
+    await sendToEmailJs(values);
+    actions.resetForm();
+    toast({
+      title: "Mensagem enviada!",
+      description: "Logo logo eu te respondo :D",
+      status: "success",
+      duration: 5000,
+      isClosable: true,
+    });
+
+    return;
   };
 
   const validateNotEmpty = (value) => {
