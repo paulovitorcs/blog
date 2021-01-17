@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "WP Gatsby Chackra Boilerplate",
+    title: "paulovitorcs",
   },
   plugins: [
     {
@@ -37,6 +37,12 @@ module.exports = {
         path: "./src/images/",
       },
       __key: "images",
+    },
+    {
+      resolve: "gatsby-plugin-env-variables",
+      options: {
+        allowList: ["EMAIL_JS_SERVICE_ID", "EMAIL_JS_TEMPLATE_ID", "EMAIL_JS_USER_ID"],
+      },
     },
   ],
 };
