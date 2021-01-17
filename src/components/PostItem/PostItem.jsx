@@ -29,7 +29,7 @@ const PostItem = (props) => {
           {ReactHtmlParser(excerpt)}
         </Box>
         <Box w="100%" textAlign="right">
-          <Heading size="sm">Read More</Heading>
+          <Heading size="sm">Leia Mais</Heading>
         </Box>
       </Link>
     </StyledPostItem>

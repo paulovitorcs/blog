@@ -11,7 +11,7 @@ const Home = () => {
       <FrontPageHeader />
       <Container>
         <Contact />
-        <Divider my="5" />
+        <Divider my="8" />
         <LatestPosts />
       </Container>
     </Layout>
