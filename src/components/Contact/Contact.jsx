@@ -17,7 +17,6 @@ import { sendToEmailJs } from "../../data/contact";
 const Contact = () => {
   const toast = useToast();
 
-  console.log(process.env.EMAIL_JS_SERVICE_ID);
   const submitForm = async (values, actions) => {
     await sendToEmailJs(values);
     actions.resetForm();
