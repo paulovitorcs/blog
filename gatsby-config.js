@@ -46,6 +46,7 @@ module.exports = {
           "EMAIL_JS_SERVICE_ID",
           "EMAIL_JS_TEMPLATE_ID",
           "EMAIL_JS_USER_ID",
+          "SITE_URL"
         ],
       },
     },

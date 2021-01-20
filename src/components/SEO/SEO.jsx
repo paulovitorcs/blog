@@ -6,7 +6,7 @@ import { useWpBasicInfo } from "../../static-queries/wp";
 const SEO = (props) => {
   const { isArticle, title, subtitle, description } = props;
   const wpBasicInfo = useWpBasicInfo();
-  const urlPage = window.location.origin;
+  const urlPage = process.env.SITE_URL;
   const titlePage = title ? title : wpBasicInfo.generalSettings.title;
   const subtitlePage = subtitle ? `${titlePage} - ${subtitle}` : null;
   const descriptionPage = description
