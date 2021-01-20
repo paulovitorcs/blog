@@ -9,10 +9,10 @@ const Home = () => {
   return (
     <Layout>
       <FrontPageHeader />
-      <Container>
-        <Contact />
-        <Divider my="8" />
+      <Container my="8">
         <LatestPosts />
+        <Divider my="10" />
+        <Contact />
       </Container>
     </Layout>
   );
