@@ -1,8 +1,8 @@
 {
-  "name": "wp-gatsby-chackra-boilerplate",
+  "name": "paulovitorcs - Blog",
   "version": "1.0.0",
   "private": true,
-  "description": "WP Gatsby Chackra Boilerplate",
+  "description": "Blog Pessoaln",
   "author": "Paulo Vitor Cruz",
   "keywords": [
     "gatsby"
@@ -13,6 +13,9 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
+  },
+  "engines": {
+    "node": "14.x"
   },
   "license": "0BSD",
   "dependencies": {
