@@ -25,7 +25,7 @@ const HomeLinkItem = (props) => {
 };
 
 HomeLinkItem.propTypes = {
-  icon: PropTypes.oneOf([PropTypes.string, PropTypes.array]).isRequired,
+  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).isRequired,
   headline: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
 };
