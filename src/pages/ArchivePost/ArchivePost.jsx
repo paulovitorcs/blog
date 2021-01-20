@@ -12,6 +12,7 @@ import Layout from "../../components/Layout";
 import PostItem from "../../components/PostItem/PostItem";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { useWpBasicInfo } from "../../static-queries/wp";
+import SEO from "../../components/SEO";
 
 const ArchivePost = (props) => {
   const { pageContext } = props;
@@ -59,15 +60,20 @@ const ArchivePost = (props) => {
   });
 
   return (
-    <Layout>
-      <Container maxW="7xl">
-        <ContentHeader title="Blog" />
-        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
-          <Masonry>{postsDisplay}</Masonry>
-        </ResponsiveMasonry>
-        {loadMoreButton}
-      </Container>
-    </Layout>
+    <>
+      <SEO subtitle="Blog" />
+      <Layout>
+        <Container maxW="7xl">
+          <ContentHeader title="Blog" />
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
+          >
+            <Masonry>{postsDisplay}</Masonry>
+          </ResponsiveMasonry>
+          {loadMoreButton}
+        </Container>
+      </Layout>
+    </>
   );
 };
 

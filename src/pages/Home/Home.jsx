@@ -5,19 +5,23 @@ import FrontPageHeader from "../../components/FrontPageHeader/FrontPageHeader";
 import HomeLinks from "../../components/HomeLinks";
 import LatestPosts from "../../components/LatestPosts";
 import Layout from "../../components/Layout";
+import SEO from "../../components/SEO/SEO";
 
 const Home = () => {
   return (
-    <Layout>
-      <FrontPageHeader />
-      <Container my="8">
-        <HomeLinks />
-        <Divider my="10" />
-        <LatestPosts />
-        <Divider my="10" />
-        <Contact />
-      </Container>
-    </Layout>
+    <>
+      <SEO />
+      <Layout>
+        <FrontPageHeader />
+        <Container my="8">
+          <HomeLinks />
+          <Divider my="10" />
+          <LatestPosts />
+          <Divider my="10" />
+          <Contact />
+        </Container>
+      </Layout>
+    </>
   );
 };
 
