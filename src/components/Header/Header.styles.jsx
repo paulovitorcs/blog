@@ -6,4 +6,8 @@ export const StyledHeader = styled.header`
     padding: 20px 0;
     background-color: ${primary['800']};
     color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
 `;

@@ -18,7 +18,7 @@ const Layout = (props) => {
     <ChakraProvider theme={theme}>
       <Header />
       <main>
-        <Box mb="100px">{children}</Box>
+        <Box mb="100px" pt="120px">{children}</Box>
       </main>
       <Footer />
     </ChakraProvider>
