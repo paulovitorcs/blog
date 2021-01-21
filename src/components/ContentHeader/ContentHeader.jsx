@@ -25,20 +25,23 @@ const ContentHeader = (props) => {
   const wpInfo = useWpBasicInfo();
   const formatedDate = moment(date).format(wpInfo.generalSettings.dateFormat);
 
-  const imageDisplay = (isPage) => featuredImage ? (
-    <Image
-      mb="4"
-      mt={isPage ? "-40px" : null}
-      height={isPage ? "30vh" : null}
-      width="100%"
-      objectFit="cover"
-      src={featuredImage.node.sourceUrl}
-      alt={featuredImage.node.altText}
-    />
-  ) : null;
+  const imageDisplay = (isPage) =>
+    featuredImage ? (
+      <Image
+        mb="4"
+        mt={isPage ? "-40px" : null}
+        height={isPage ? "30vh" : null}
+        width="100%"
+        objectFit="cover"
+        src={featuredImage.node.sourceUrl}
+        alt={featuredImage.node.altText}
+      />
+    ) : null;
 
-  const pageImageDisplay = featuredImageStyle == "page" ? imageDisplay(true) : null;
-  const postImageDisplay = featuredImageStyle == "post" ? imageDisplay(false) : null;
+  const pageImageDisplay =
+    featuredImageStyle == "page" ? imageDisplay(true) : null;
+  const postImageDisplay =
+    featuredImageStyle == "post" ? imageDisplay(false) : null;
 
   const authorDisplay = author ? (
     <Flex align="center">
@@ -66,7 +69,11 @@ const ContentHeader = (props) => {
           {authorDisplay}
           {dateDisplay}
         </HStack>
-        <Heading mb="10" size="4xl" style={{ textAlign: titleAlign }}>
+        <Heading
+          mb="10"
+          fontSize={{ base: "40px", md: "70px" }}
+          style={{ textAlign: titleAlign }}
+        >
           {title}
         </Heading>
         {postImageDisplay}
