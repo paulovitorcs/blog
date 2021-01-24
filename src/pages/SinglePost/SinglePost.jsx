@@ -15,15 +15,13 @@ const SinglePost = (props) => {
     title,
   } = pageContext;
 
-  console.log(featuredImage);
-
   return (
     <>
       <SEO
         isArticle={true}
         subtitle={title}
         description={excerpt}
-        url={`post/${slug}`}
+        url={`/post/${slug}`}
         image={featuredImage?.node?.sourceUrl}
       />
       <Layout>
