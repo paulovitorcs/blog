@@ -5,11 +5,27 @@ import SEO from "../../components/SEO";
 
 const SinglePost = (props) => {
   const { pageContext } = props;
-  const { author, content, date, featuredImage, slug, title } = pageContext;
+  const {
+    author,
+    content,
+    excerpt,
+    date,
+    featuredImage,
+    slug,
+    title,
+  } = pageContext;
+
+  console.log(featuredImage);
 
   return (
     <>
-      <SEO subtitle={title} />
+      <SEO
+        isArticle={true}
+        subtitle={title}
+        description={excerpt}
+        url={`post/${slug}`}
+        image={featuredImage?.node?.sourceUrl}
+      />
       <Layout>
         <PostContent
           title={title}
