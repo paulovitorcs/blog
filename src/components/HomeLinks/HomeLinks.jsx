@@ -5,7 +5,7 @@ import HomeLinkItem from "../HomeLinkItem/HomeLinkItem";
 
 const HomeLinks = () => {
   return (
-    <SimpleGrid columns={{base: 1, md: 2, lg: 4}} spacing="75px" justifyContent="center">
+    <SimpleGrid columns={{base: 1, md: 3}} spacing="75px" justifyContent="center">
       <HomeLinkItem icon="rss" headline="Blog" link="/blog" />
       <HomeLinkItem icon={["fab", "github"]} headline="Github" link="https://github.com/paulovitorcs" />
       <HomeLinkItem icon={["fab", "linkedin"]} headline="LinkedIn" link="https://www.linkedin.com/in/paulovitorcs/" />
