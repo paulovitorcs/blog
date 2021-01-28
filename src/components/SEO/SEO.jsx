@@ -7,7 +7,7 @@ import DefaultThumbnail from '../../../static/default-thumbnail.png';
 const SEO = (props) => {
   const { isArticle, title, subtitle, description, url, image } = props;
   const wpBasicInfo = useWpBasicInfo();
-  const imagePage = image ? url : process.env.SITE_URL + DefaultThumbnail;
+  const imagePage = image ? image : process.env.SITE_URL + DefaultThumbnail;
   const urlPage = url ? process.env.SITE_URL + url : process.env.SITE_URL;
   const titlePage = title ? title : wpBasicInfo.generalSettings.title;
   const subtitlePage = subtitle ? `${titlePage} - ${subtitle}` : null;
