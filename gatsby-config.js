@@ -46,18 +46,21 @@ module.exports = {
           "EMAIL_JS_SERVICE_ID",
           "EMAIL_JS_TEMPLATE_ID",
           "EMAIL_JS_USER_ID",
-          "SITE_URL"
+          "SITE_URL",
         ],
       },
     },
     {
       resolve: "gatsby-plugin-google-fonts",
       options: {
-        fonts: [
-          "Darker Grotesque:400,500,600,700",
-          "Bree Serif:400",
-        ],
+        fonts: ["Darker Grotesque:400,500,600,700", "Bree Serif:400"],
         display: "swap",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-disqus",
+      options: {
+        shortname: "paulovitorcs",
       },
     },
   ],
