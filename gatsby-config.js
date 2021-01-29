@@ -16,7 +16,7 @@ module.exports = {
     },
     "gatsby-plugin-styled-components",
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: "gatsby-plugin-google-gtag",
       options: {
         trackingId: "G-013DP4ZPKQ",
       },
