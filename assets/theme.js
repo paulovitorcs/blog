@@ -21,6 +21,13 @@ const theme = extendTheme({
       p: {
         marginBottom: "15px"
       },
+      pre: {
+        backgroundColor: primary["900"],
+        color: 'white',
+        fontSize: '13px',
+        padding: '10px',
+        marginBottom: '10px'
+      },
       ".wysiwyg-content": {
         h1: {
           fontSize: 60,
